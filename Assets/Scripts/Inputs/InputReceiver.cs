@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class InputReceiver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    protected InputHandler[] inputHandlers;
 
-    // Update is called once per frame
-    void Update()
+    public abstract void OnInputReceived();
+
+    private void Awake()
     {
-        
+        inputHandlers = GetComponents<InputHandler>();
     }
 }

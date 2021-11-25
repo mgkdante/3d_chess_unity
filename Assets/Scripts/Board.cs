@@ -11,4 +11,14 @@ public class Board : MonoBehaviour
     {
         return bottomLeftSquareTransform.position + new Vector3(coords.x * squareSize, 0f, coords.y * squareSize);
     }
+
+    internal void OnSquareSelected(Vector3 inputPosition)
+    {
+
+    }
+
+    internal bool HasPiece(Piece piece)
+    {
+
+    }
 }

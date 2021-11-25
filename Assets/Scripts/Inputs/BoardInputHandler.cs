@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoardInputHandler : MonoBehaviour
+public class BoardInputHandler : MonoBehaviour, InputHandler
 {
-    // Start is called before the first frame update
-    void Start()
+    private Board board;
+
+    private void Awake()
     {
-        
+        board = GetComponent<Board>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ProcessInput(Vector3 inputPosition, GameObject selectedObject, Action callback)
     {
-        
+        board.OnSquareSelected(inputPosition);
     }
 }

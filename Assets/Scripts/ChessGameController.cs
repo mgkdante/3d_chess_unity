@@ -10,15 +10,25 @@ public class ChessGameController : MonoBehaviour
     [SerializeField] private Board board;
 
     private PieceCreator pieceCreator;
+    private ChessPlayer whitePlayer;
+    private ChessPlayer blackPlayer;
+    private ChessPlayer activePlayer;
 
     private void Awake()
     {
         SetDependencies();
+        CreatePlayers();
     }
 
     private void SetDependencies()
     {
        pieceCreator = GetComponent<PieceCreator>();
+    }
+
+    private void CreatePlayers()
+    {
+        whitePlayer = new ChessPlayer(TeamColor.White, board);
+        blackPlayer = new ChessPlayer(TeamColor.Black, board);
     }
 
     void Start()
@@ -29,6 +39,8 @@ public class ChessGameController : MonoBehaviour
     private void StartNewGame()
     {
         CreatePiecesFromLayout(startingBoardLayout);
+        activePlayer = whitePlayer;
+        GenerateAllPossiblePlayerMoves(activePlayer);
     }
 
     private void CreatePiecesFromLayout(BoardLayout layout)
@@ -52,6 +64,11 @@ public class ChessGameController : MonoBehaviour
         newPiece.SetData(squareCoords, team, board);
 
 
+    }
+
+    private void GenerateAllPossiblePlayerMoves(ChessPlayer player)
+    {
+        player.GenerateAllPossibleMoves();
     }
 
 }
