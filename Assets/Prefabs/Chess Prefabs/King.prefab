@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableMoves: []
---- !u!114 &-5797310922518368726
+--- !u!114 &1280690166603051616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -84,6 +84,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3697364745140951087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13469e4281c42974e971b689a6556d2a, type: 3}
+  m_Script: {fileID: 11500000, guid: 27c4ba8ca57ddc44ead798db2ce11c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

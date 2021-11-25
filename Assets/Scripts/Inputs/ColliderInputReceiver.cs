@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColliderInputReceiver : MonoBehaviour
+public class ColliderInputReceiver : InputReceiver
 {
     private Vector3 clickPosition;
 

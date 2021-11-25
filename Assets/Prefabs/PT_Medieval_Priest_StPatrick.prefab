@@ -895,8 +895,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4569300711265150}
   - component: {fileID: 95690508696154446}
-  - component: {fileID: 3090898516856201986}
   - component: {fileID: -7285006526734835361}
+  - component: {fileID: 7682956696997581552}
   m_Layer: 0
   m_Name: PT_Medieval_Priest_StPatrick
   m_TagString: Untagged
@@ -939,18 +939,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3090898516856201986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277940811097104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13469e4281c42974e971b689a6556d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-7285006526734835361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -964,6 +952,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableMoves: []
+--- !u!114 &7682956696997581552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277940811097104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c4ba8ca57ddc44ead798db2ce11c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1284164805786798
 GameObject:
   m_ObjectHideFlags: 0
