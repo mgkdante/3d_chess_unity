@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 [RequireComponent(typeof(IObjectTweener))]
 public abstract class Piece : MonoBehaviour
 {    public Board board { protected get; set; }
     public Vector2Int occupiedSquare { get; set; }
     public TeamColor team { get; set; }
     public bool hasMoved { get; private set; }
+
     public List<Vector2Int> availableMoves;
 
     private IObjectTweener tweener;
