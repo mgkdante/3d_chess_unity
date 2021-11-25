@@ -6,8 +6,8 @@ using UnityEngine;
 public class PieceCreator : MonoBehaviour
 {
     [SerializeField] private GameObject[] piecesPrefabs;
-    [SerializeField] private Material blackMaterial;
-    [SerializeField] private Material whiteMaterial;
+  /*  [SerializeField] private Material blackMaterial;
+    [SerializeField] private Material whiteMaterial;*/
 
     private Dictionary<string, GameObject> nameToPieceDict = new Dictionary<string, GameObject>();
 
@@ -28,12 +28,6 @@ public class PieceCreator : MonoBehaviour
             return prefab;
         }
         return null;
-    }
-
-    public Material GetTeamMaterial(TeamColor team)
-    {
-        return team == TeamColor.White ? whiteMaterial : blackMaterial;
-
     }
 
 }

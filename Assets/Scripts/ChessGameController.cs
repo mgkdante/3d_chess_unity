@@ -7,6 +7,7 @@ using UnityEngine;
 public class ChessGameController : MonoBehaviour
 {
     [SerializeField] private BoardLayout startingBoardLayout;
+    [SerializeField] private Board board;
 
     private PieceCreator pieceCreator;
 
@@ -48,6 +49,9 @@ public class ChessGameController : MonoBehaviour
     private void CreatePieceAndInitialize(Vector2Int squareCoords, TeamColor team, Type type)
     {
         Piece newPiece = pieceCreator.CreatePiece(type).GetComponent<Piece>();
+        newPiece.SetData(squareCoords, team, board);
+
+
     }
 
 }
