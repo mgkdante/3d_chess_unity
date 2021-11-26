@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public interface InputHandler
+public interface IInputHandler
 {
     void ProcessInput(Vector3 inputPosition, GameObject selectedObject, Action callback);
 }

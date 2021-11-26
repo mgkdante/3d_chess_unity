@@ -4,12 +4,12 @@ using UnityEngine;
 
 public abstract class InputReceiver : MonoBehaviour
 {
-    protected InputHandler[] inputHandlers;
+    protected IInputHandler[] inputHandlers;
 
     public abstract void OnInputReceived();
 
     private void Awake()
     {
-        inputHandlers = GetComponents<InputHandler>();
+        inputHandlers = GetComponents<IInputHandler>();
     }
 }

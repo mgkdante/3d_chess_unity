@@ -58,7 +58,7 @@ MonoBehaviour:
   - position: {x: 7, y: 2}
     pieceType: 0
     teamColor: 1
-  - position: {x: 8, y: 0}
+  - position: {x: 8, y: 2}
     pieceType: 0
     teamColor: 1
   - position: {x: 1, y: 8}

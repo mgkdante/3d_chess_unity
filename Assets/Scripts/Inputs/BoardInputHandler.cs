@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class BoardInputHandler : MonoBehaviour, InputHandler
+[RequireComponent(typeof(Board))]
+
+public class BoardInputHandler : MonoBehaviour, IInputHandler
 {
     private Board board;
 

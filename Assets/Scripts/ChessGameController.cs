@@ -66,6 +66,7 @@ public class ChessGameController : MonoBehaviour
 
         board.SetPieceOnBoard(squareCoords, newPiece);
 
+
         ChessPlayer currentPlayer = team == TeamColor.White ? whitePlayer : blackPlayer;
         currentPlayer.AddPiece(newPiece);
     }

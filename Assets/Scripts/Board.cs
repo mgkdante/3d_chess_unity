@@ -45,6 +45,7 @@ public class Board : MonoBehaviour
     {
         Vector2Int coords = CalculateCoordsFromPosition(inputPosition);
         Piece piece = GetPieceOnSquare(coords);
+
         if (selectedPiece)
         {
             if (piece != null && selectedPiece == piece)
@@ -58,7 +59,7 @@ public class Board : MonoBehaviour
         {
             if (piece != null && chessController.IsTeamTurnActive(piece.team))
                 SelectPiece(piece);
-        }
+        }    
     }
 
 
@@ -99,7 +100,9 @@ public class Board : MonoBehaviour
     private bool CheckIfCoordinatesAreOnBoard(Vector2Int coords)
     {
         if (coords.x < 0 || coords.y < 0 || coords.x >= BOARD_SIZE || coords.y >= BOARD_SIZE)
+        {
             return false;
+        }
         return true;
     }
 
